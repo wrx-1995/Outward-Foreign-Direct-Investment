@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>对外直接投资研究网</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/basic.css">
+	<style>
+	.main-body{color: #333;}
+	.main-body .col-md-12 h3{font-weight: 900;}
+	.main-body h4 a{color:#1565C0;}
+	.main-body .col-md-6{padding: 20px;}
+	.main-body .col-md-6:hover{box-shadow: 1px 1px 20px #BDBDBD;transition: 0.3s;}
+	.change{margin-top: 20px;}
+	.main-body .change:hover{box-shadow: none;}
+	</style>
+</head>
+<body>
+	<!-- 页面头部 -->
+	<header id="pageTitle">
+		<hgroup>
+			<h1>对外直接投资研究网</h1>
+			<small>Outward Foreign Direct Investment</small>
+		</hgroup>
+		<div class="form-group form-inline pageTitle-form">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">登录</button>
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#registerModal">注册</button>
+			<div class="input-group">
+				<input type="search" class="form-control">
+				<span class="input-group-addon btn-search"><span class="glyphicon glyphicon-search"></span></span>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 导航栏部分 -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				         <span class="sr-only">Toggle Navigation</span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				       </button>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav main-nav col-md-12">	
+							<li class="cur dropdown main-nav-li col-md-2 text-center">
+								<a href="data.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;数据资料 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="data.html#foreign-base">外文数据库</a></li>
+									<li><a href="data.html#chinese-base">中文数据库</a></li>
+									<li><a href="data.html#project-base">项目数据库</a></li>
+									<li><a href="data.html#visualize-base">可视化数据库</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="literatura.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;著名文献<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="literature.html">国内文献</a></li>
+									<li><a href="literature.html">国外文献</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="##" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;研究分享<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="submit.html">提交论文</a></li>
+									<li><a href="refer.html">论文参考</a></li>
+								</ul>
+							</li>
+							<li class="main-nav-li col-md-2 text-center"><a href="academia.html">学术交流</a></li>
+							<li class="main-nav-li col-md-2 text-center"><a href="about.html">关于我们</a></li>
+						</ul>
+					</div>      <!-- end navbar-collapse -->		
+				</div> 		<!-- end col-md-offset-2 col-md-10 -->
+			</div>   	<!-- end row -->
+		</div>   <!-- end container	 -->	
+	</nav>
+
+	<!-- 弹出登录模态框modal -->
+	<div class="modal fade" id="loginModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">登 录</h3>					 
+				</div>
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">登录</button>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 弹出注册模态框modal -->
+	<div class="modal fade" id="registerModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">注 册</h3>					 
+				</div>
+
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserName">邮  箱：</label>
+							<input type="email" class="form-control" id="InputUserName" placeholder="example@xxx.com">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group">
+							<label for="InputConUserPwd">确认密码：</label>
+							<input type="password" class="form-control" id="InputConUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">注  册</button>
+						</div>						
+					</form>
+				</div>    <!-- end modal-body   -->
+			</div>    <!-- end modal-content -->
+		</div>    <!-- end modal-diglog -->
+	</div>     <!--  end modal -->
+
+	<div class="main-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<hgroup>
+						<h3>热门主题</h3>
+						<h6 class="text-muted">Hot question</h6>
+					</hgroup>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h4><a href="academia_detail.html">个人投资理财有什么值得推荐的网站?</a></h4>
+					<p>都是非常不错的，个人比较用和讯多一些，从开始学习投资理财入门，到学了之后，这些网站都可以给你很多内容，这些网站基本就是财经类的百科网站了。多看看必定收获不少，财经新闻类：和讯，金融界：东方财富网，新浪财经，凤凰财经，证券报，证券时报等...</p>
+				</div>
+				<div class="col-md-6">
+					<h4><a href="academia_detail.html">如何进行投资理财?</a></h4>
+					<p>30%、20%、10%，如果某种资产价格上涨后，减少这类资产总额，将其平均分配在余下的资产中，使之恒定保持一个4321的比例。以下是具体分配方法：这是一种科学支配家庭月收入的投资理财方法，无论是个人还是家庭理财，40%投资创富，比如投资股...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h4><a href="academia_detail.html">证券投资类应该看什么书?</a></h4>
+					<p>1.价值投资，我个人推荐，巴菲特致股东的信，完整收集读几遍就够了，接着就是自己设计问题自己思考了，价值投资的重心在于验证，所以书本的意义不大，初级的验证报表，高级的像巴菲特那样，去转遍大多数垃圾桶看看里面有多少是可口可...</p>
+				</div>
+				<div class="col-md-6">
+					<h4><a href="academia_detail.html">怎样评价价值投资的理念?</a></h4>
+					<p>目前所谓的价值投资，其实是很多Trade-off的集合体。为什么这么说呢？我们先看看各位对“价值投资”的期待吧：1.低价格2.优质资产3.行业龙头4.低风险5.行业前景好6.长期投资但这些条件其实是自相矛盾的，不是么？自巴菲特成名以来，无...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h4><a href="academia_detail.html">数学好的人是否在股票投资上更占优势?</a></h4>
+					<p>股票分析方法很多，其中数量分析(Quantitative Analysis)流派可能是数学用得最多、最深的。数量分析做得最好、名气最大的应该是文艺复兴科技公司，里面的人才都是非常优秀的数学家、物理学家、统计学家，《数学之美》中曾经提到过...</p>
+				</div>
+				<div class="col-md-6">
+					<h4><a href="academia_detail.html">哪里有优质的投资研究报告阅读?</a></h4>
+					<p>包含276种专家评审的管理学术期刊，提供最新的管理学研究和学术思想。设计会计金融与经济学、市场营销、人力资源与组织研究、运营物理与质量管理、商业管理与战略、信息与知识管理、公共政策与环境管理、教育管理、旅管管理等学科。</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 change">
+					<button type="button" class="btn btn-primary" style="width: 100%;">换一批</button>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+
+	<footer id="footer">
+		<p>CopyRight © 2016  广东工业大学 经济与贸易学院</p>
+		<p>地址：中国 广东省 广州市 天河区 迎龙路 161号  邮编：510520</p>
+	</footer>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

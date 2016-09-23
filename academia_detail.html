@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>对外直接投资研究网</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/basic.css">
+	<style>
+	.main-body{color: #333;}
+	.main-body .row-title h4{color: #226496; font-weight: 900; margin-top: 40px; margin-bottom: 40px;}
+	.comment-msg{color: #226496; margin-bottom: 15px; }
+	.topics li{margin-top: 8px;}
+	.btn-comment{margin-top: 20px; margin-bottom: 20px; }
+	.btn-comment-left{padding-left: 0;}
+	.btn-comment-right{padding-right: 0;}
+	.btn-comment .btn{background-color: #ccc; letter-spacing: 3px;}
+	.btn-comment .btn a:hover{text-decoration: none;}
+	#edit-comment{margin-top: 50px;}
+	#edit-comment .btn{padding-right: 30px; padding-left: 30px; }
+	</style>
+</head>
+<body>
+	<!-- 页面头部 -->
+	<header id="pageTitle">
+		<hgroup>
+			<h1>对外直接投资研究网</h1>
+			<small>Outward Foreign Direct Investment</small>
+		</hgroup>
+		<div class="form-group form-inline pageTitle-form">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">登录</button>
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#registerModal">注册</button>
+			<div class="input-group">
+				<input type="search" class="form-control">
+				<span class="input-group-addon btn-search"><span class="glyphicon glyphicon-search"></span></span>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 导航栏部分 -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				         <span class="sr-only">Toggle Navigation</span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				       </button>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav main-nav col-md-12">	
+							<li class="cur dropdown main-nav-li col-md-2 text-center">
+								<a href="data.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;数据资料 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="data.html#foreign-base">外文数据库</a></li>
+									<li><a href="data.html#chinese-base">中文数据库</a></li>
+									<li><a href="data.html#project-base">项目数据库</a></li>
+									<li><a href="data.html#visualize-base">可视化数据库</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="literatura.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;著名文献<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="literature.html">国内文献</a></li>
+									<li><a href="literature.html">国外文献</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="refer.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;研究分享<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="submit.html">提交论文</a></li>
+									<li><a href="refer.html">论文参考</a></li>
+								</ul>
+							</li>
+							<li class="main-nav-li col-md-2 text-center"><a href="academia.html">学术交流</a></li>
+							<li class="main-nav-li col-md-2 text-center"><a href="about.html">关于我们</a></li>
+						</ul>
+					</div>      <!-- end navbar-collapse -->		
+				</div> 		<!-- end col-md-offset-2 col-md-10 -->
+			</div>   	<!-- end row -->
+		</div>   <!-- end container	 -->	
+	</nav>
+
+	<!-- 弹出登录模态框modal -->
+	<div class="modal fade" id="loginModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">登 录</h3>					 
+				</div>
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">登录</button>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 弹出注册模态框modal -->
+	<div class="modal fade" id="registerModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">注 册</h3>					 
+				</div>
+
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserName">邮  箱：</label>
+							<input type="email" class="form-control" id="InputUserName" placeholder="example@xxx.com">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group">
+							<label for="InputConUserPwd">确认密码：</label>
+							<input type="password" class="form-control" id="InputConUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">注  册</button>
+						</div>						
+					</form>
+				</div>    <!-- end modal-body   -->
+			</div>    <!-- end modal-content -->
+		</div>    <!-- end modal-diglog -->
+	</div>     <!--  end modal -->
+
+	<div class="main-body">
+		<div class="container">
+			<div class="row row-title">
+				<div class="col-md-offset-1 col-md-7">
+					<h4>证券投资类应该看什么书？</h4>
+				</div>
+				<div class="col-md-4">
+					<h4>相关主题</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-7">
+					<p class="comment-msg">小白 发布于 2012-08-04</p>
+					<p>1:N多年前，我也一直被这个问题困扰，只是当时信息落后，只能买回一本本地读，最后一个结论：买证券投资类的书籍，不要去书店，里面到处都是不知名的作者写的玩意，而且价格特别贵，就和百度知道的粘贴复制党一样；</p>
+					<p>2：书很多，但是能够改变你的投资思维的也就是那么一两本，首先要定位好，你是要玩价值和玩技术，接着术业有专攻，不要混合，完全不同的两种思维；</p>
+					<p>3：定位清楚了：(1)价值投资，我个人推荐，巴菲特致股东的信，完整收集读几遍就够了，接着就是自己设计问题自己思考了，价值投资的重心在于验证，所以书本的意义不大，初级的验证报表，高级的像巴菲特那样，去转遍大多数垃圾桶看着里面有多少是可口可乐的易拉罐；(2)技术分析，这个就得阅遍技术分析的书籍了，因为图形比较直观，不需要验证什么，只需要推论，看图形得出结论，然后制定交易策略，所以见多识广对技术分析快速进阶快速捞钱有直接的帮助；再者，技术分析里面有量价时空四大体系，还有什么指标，我个人不相信这个，先整明白自己适合哪个体系，接着慢慢来吧。。首先推荐书籍：股票作手回忆里，利赴摩尔写的。。纯回忆录，如果看出心得咱们继续交谈，否则没意义；</p>
+					<p>ps：巴菲特比较熟悉，没啥可说了，利赴摩尔，和巴菲特的老师格雷厄姆一个时代的人物，只不过是玩技术分析的，我个人总结了技术分析五个最杰出的交易员，他是其中一个。。为啥，感兴趣去对比他和格雷厄姆的投资业绩就知道了，呵呵。。。</p>
+					<div class="col-md-6 btn-comment btn-comment-left">
+						<button type="button" class="btn btn-default" style="width: 100%;"><a href="javascript:void(0);"><span class="glyphicon glyphicon-thumbs-up"></span>1633</a></button>
+					</div>
+					<div class="col-md-6 btn-comment btn-comment-right">
+						<button type="button" class="btn btn-default" style="width: 100%;"><a href="javascript:void(0);"><span class="glyphicon glyphicon-thumbs-down"></span>86</a></button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled topics">
+						<li><a href="#">如何进行投资理财？</a></li>
+						<li><a href="#">怎样理解价值投资的理念？</a></li>
+						<li><a href="#">哪里有优质的投资研究报告阅读？</a></li>
+						<li><a href="#">数学好的人是否在股票投资上更占有优势？</a></li>
+						<li><a href="#">怎样理解价值投资的理念？</a></li>
+						<li><a href="#">哪里有优质的投资研究报告阅读？</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-7">
+					<hr>
+					<p class="comment-msg">兰永坤 发布于 2013-12-09</p>
+					<p>上面的答案都说的非常好，介绍了非常全面的书籍，在这里我说一个点：如果题主真的非常想进入证券这个行业的，有一套书能够非常全面的给你介绍证券市场的信息和知识，让你对整个市场的运作有个详细的了解。《证券基础知识》《证券交易》《证券投资基金》《证券投资分析》《证券发行与承销》这是由证券从业委员会编的教材，由中国金融出版社出版。它是证券从业资格考试指定教材。虽然很多人都说这个书有这样那样的问题，是应试教育的产物。但不可不说，它们真的说的很全面很细致。</p>
+					<p>建议先看基础那本，对整个行业有了了解以后，再决定自己是否需要看其他的哪一个知识块的书。我认为，证券投资还是先把这些基础内容都了解了以后，再去看由各路大神写的经验和教训，以及证券的历史和操作方式。</p>
+					<div class="col-md-6 btn-comment btn-comment-left">
+						<button type="button" class="btn btn-default" style="width: 100%;"><a href="javascript:void(0);"><span class="glyphicon glyphicon-thumbs-up"></span> 1033</a></button>
+					</div>
+					<div class="col-md-6 btn-comment btn-comment-right">
+						<button type="button" class="btn btn-default" style="width: 100%;"><a href="javascript:void(0);"><span class="glyphicon glyphicon-thumbs-down"></span>26</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="edit-comment">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-7">
+					<div class="form-group">
+						<textarea class="form-control" rows="6" placeholder="写回答"></textarea>
+					</div>
+					<button type="button" class="btn btn-primary pull-right">发布</button>
+				</div>		
+			</div>			
+		</div>
+	</div>
+	
+
+	<footer id="footer">
+		<p>CopyRight © 2016  广东工业大学 经济与贸易学院</p>
+		<p>地址：中国 广东省 广州市 天河区 迎龙路 161号  邮编：510520</p>
+	</footer>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>对外直接投资研究网</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/basic.css">
+	<style>
+		.main-body{color:#333;}
+		.main-body h3{color: #226496; font-weight: 900; margin-bottom: 20px;}
+		.left-nav{margin-top: 20px; margin-bottom: 50px;}
+		.left-nav li{margin-top: 3px; letter-spacing: 1px;}
+		.left-nav a{color: #333; font-size: 14px;}
+		.left-nav a:hover{color: #226496;}
+		.main-body label{font-weight: normal;}
+		.search-bar{margin-top: 20px; margin-bottom: 25px;}
+		.search-bar span{text-indent: 15px; letter-spacing: 15px; background-color: #337ab7; color: #fff;}
+		.article-list h4{color: #226496; margin-bottom: 22px; font-weight: 500;}
+		.article-list a{color: #333; letter-spacing: 1px; font-size: 14px;}
+		.article-list a:hover{color: #226496;}
+		.article-list .col-md-3 span{color: #ccc;}
+		.article-list .col-md-3 span:hover{color: #333;}
+		.splitPageBar{margin-top: 25px;}
+	</style>
+</head>
+<body>
+	<!-- 页面头部 -->
+	<header id="pageTitle">
+		<hgroup>
+			<h1>对外直接投资研究网</h1>
+			<small>Outward Foreign Direct Investment</small>
+		</hgroup>
+		<div class="form-group form-inline pageTitle-form">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">登录</button>
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#registerModal">注册</button>
+			<div class="input-group">
+				<input type="search" class="form-control">
+				<span class="input-group-addon btn-search"><span class="glyphicon glyphicon-search"></span></span>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 导航栏部分 -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				         <span class="sr-only">Toggle Navigation</span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				       </button>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav main-nav col-md-12">	
+							<li class="cur dropdown main-nav-li col-md-2 text-center">
+								<a href="data.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;数据资料 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="data.html#foreign-base">外文数据库</a></li>
+									<li><a href="data.html#chinese-base">中文数据库</a></li>
+									<li><a href="data.html#project-base">项目数据库</a></li>
+									<li><a href="data.html#visualize-base">可视化数据库</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="literatura.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;著名文献<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="literature.html">国内文献</a></li>
+									<li><a href="literature.html">国外文献</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="##" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;研究分享<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="submit.html">提交论文</a></li>
+									<li><a href="refer.html">论文参考</a></li>
+								</ul>
+							</li>
+							<li class="main-nav-li col-md-2 text-center"><a href="academia.html">学术交流</a></li>
+							<li class="main-nav-li col-md-2 text-center"><a href="about.html">关于我们</a></li>
+						</ul>
+					</div>      <!-- end navbar-collapse -->		
+				</div> 		<!-- end col-md-offset-2 col-md-10 -->
+			</div>   	<!-- end row -->
+		</div>   <!-- end container	 -->	
+	</nav>
+
+	<!-- 弹出登录模态框modal -->
+	<div class="modal fade" id="loginModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">登 录</h3>					 
+				</div>
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">登录</button>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 弹出注册模态框modal -->
+	<div class="modal fade" id="registerModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">注 册</h3>					 
+				</div>
+
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserName">邮  箱：</label>
+							<input type="email" class="form-control" id="InputUserName" placeholder="example@xxx.com">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group">
+							<label for="InputConUserPwd">确认密码：</label>
+							<input type="password" class="form-control" id="InputConUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">注  册</button>
+						</div>						
+					</form>
+				</div>    <!-- end modal-body   -->
+			</div>    <!-- end modal-content -->
+		</div>    <!-- end modal-diglog -->
+	</div>     <!--  end modal -->
+	
+	 <div class="main-body">
+	 	<div class="container">
+	 		<div class="row">
+	 			<!-- 左侧菜单栏 -->
+	 			<div class="col-md-offset-1 col-md-2">
+	 				<h3>分类筛选</h3>
+	 				<ul class="list-unstyled left-nav">
+	 					<li><a href="#">全部论文</a></li>
+	 					<li><a href="#">实证研究</a></li>
+	 					<li><a href="#">理论分析</a></li>
+	 					<li><a href="#">案例分析</a></li>
+	 				</ul>
+	 				<h3>排序</h3>
+	 				<ul class="list-unstyled left-nav">
+	 					<li><a href="#">按相关程度</a></li>
+	 					<li><a href="#">按浏览量</a></li>
+	 					<li><a href="#">按评论数</a></li>
+	 					<li><a href="#">按下载数</a></li>
+	 				</ul>
+	 			</div>
+				<!-- 右侧搜索框+文章列表+页码导航条 -->
+	 			<div class="col-md-8">
+	 				<div class="row">
+	 					<div class="col-md-11">
+		 					<div class="input-group search-bar">
+		 					<input type="text" class="form-control">
+		 					<span class="input-group-addon btn btn-primary">搜索</span>
+		 					</div>
+	 					</div>
+	 				</div>
+	 				
+	 				<!-- 文章列表 -->
+	 				<div class="row article-list">
+	 					<div class="col-md-8">
+	 						<h4>题名</h4>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于神经网络反馈补偿控制的悬浮球位置控制</a></p>
+	 						<p><a href="#">基于增量式GHSOM神经网络模型的入侵检测研究</a></p>
+	 						<p><a href="#">基于小波变换与神经网络的孤岛检测技术</a></p>
+	 						<p><a href="#">基于改进GA-BP神经网络的湿度传感器的温度补偿</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 						<p><a href="#">基于约束性模糊元胞自动机的城镇用地扩展模拟研究</a></p>
+	 					</div>
+	 					<div class="col-md-3">
+	 						<h4>作者</h4>
+	 						<p>舒帮荣 <a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>朱坚民<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>张英<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>曹仁贤<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>武向娟<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 						<p>舒帮荣<a href="#"><span class="glyphicon glyphicon-save pull-right"></span></a></p>
+	 					</div>
+	 				</div>
+	 				<!-- 页面导航条 -->
+	 				<div class="row splitPageBar">
+	 					<div class="col-md-offset-1 col-md-10">
+	 						<ul class="pagination">
+							  <li><a href="#">&laquo;第一页</a></li>
+							  <li><a href="#">上一页</a></li>
+							  <li  class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a href="#">下一页</a></li>
+							  <li><a href="#">最后一页&raquo;</a></li>
+							</ul> 
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>	 <!-- end row -->	
+	 	</div>	<!-- end container -->
+	 </div>   <!-- end main-body -->
+
+	<footer id="footer">
+		<p>CopyRight © 2016  广东工业大学 经济与贸易学院</p>
+		<p>地址：中国 广东省 广州市 天河区 迎龙路 161号  邮编：510520</p>
+	</footer>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

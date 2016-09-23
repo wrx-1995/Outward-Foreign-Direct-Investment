@@ -1,0 +1,77 @@
+@charset "utf-8";
+body{
+	font-family: "Microsoft YaHei";
+}
+/*页面头部*/
+#pageTitle{
+	position: relative;
+	color:#fafafa;	
+	width: 100%;
+	height: 300px;
+	background:url(../img/header.jpg)  50% 35% no-repeat #405477;
+}
+#pageTitle hgroup{
+	margin-top: 0;
+	padding-top: 62px;
+	padding-left: 20%;
+}
+#pageTitle h1{
+	letter-spacing: 10px;
+	font-weight: bold;
+}
+#pageTitle small{
+	font-size: 14px;
+}
+#pageTitle .pageTitle-form{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+#pageTitle .btn-search{
+	border: none;
+	cursor: pointer;
+}
+#pageTitle .btn-search:hover{
+	color:#fff;
+	background-color: #5CB85C;
+}
+
+/*导航栏*/
+.main-nav{
+	font-size: 15px;
+}
+.main-nav-li a{
+	font-weight: bold;
+}
+
+/*模态框大小设置*/
+#loginModal .modal-dialog{
+	width: 420px;
+}
+#registerModal .modal-dialog{
+	width: 520px;
+}
+
+/*页面底部*/
+#footer{
+	width: 100%;
+	padding: 15px 0;
+	margin-top: 50px;
+	background-color: #eee;
+	text-align: center;
+	color: #616161;
+}
+#footer p{
+	padding-top: 5px;
+	height: 26px;
+	line-height: 26px;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 769px){
+	#pageTitle .pageTitle-form{
+		display: none;
+	}
+}
+
+

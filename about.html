@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>对外直接投资研究网</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/basic.css">
+	<style>
+	.main-body{color: #333;}
+	.main-body .col-md-12 h3{font-weight: 900;}
+	.main-body .container{margin-bottom: 20px;}
+	#intro hgroup,#expertise hgroup,#contact hgroup{margin-bottom: 25px;}
+	#intro .col-md-8 p,#expertise .col-md-8 p{text-indent: 2em}
+	#member{margin-bottom: 40px;}
+	#member .thumbnail{border: none; margin-top: 67px; margin-bottom: 6px;}
+	#member .thumbnail.leader{margin-top: 0;}
+	#team,#contact{margin-bottom: 40px;}
+	</style>
+</head>
+<body>
+	<!-- 页面头部 -->
+	<header id="pageTitle">
+		<hgroup>
+			<h1>对外直接投资研究网</h1>
+			<small>Outward Foreign Direct Investment</small>
+		</hgroup>
+		<div class="form-group form-inline pageTitle-form">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">登录</button>
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#registerModal">注册</button>
+			<div class="input-group">
+				<input type="search" class="form-control">
+				<span class="input-group-addon btn-search"><span class="glyphicon glyphicon-search"></span></span>
+			</div>
+		</div>
+	</header>
+	
+	<!-- 导航栏部分 -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				         <span class="sr-only">Toggle Navigation</span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				         <span class="icon-bar"></span>
+				       </button>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav main-nav col-md-12">	
+							<li class="cur dropdown main-nav-li col-md-2 text-center">
+								<a href="data.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;数据资料 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="data.html#foreign-base">外文数据库</a></li>
+									<li><a href="data.html#chinese-base">中文数据库</a></li>
+									<li><a href="data.html#project-base">项目数据库</a></li>
+									<li><a href="data.html#visualize-base">可视化数据库</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="literatura.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;著名文献<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="literature.html">国内文献</a></li>
+									<li><a href="literature.html">国外文献</a></li>
+								</ul>
+							</li>
+							<li class="dropdown main-nav-li col-md-2 text-center">
+								<a href="refer.html" data-toggle="dropdown" class="dropdown-toggle">&nbsp;&nbsp;研究分享<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="submit.html">提交论文</a></li>
+									<li><a href="refer.html">论文参考</a></li>
+								</ul>
+							</li>
+							<li class="main-nav-li col-md-2 text-center"><a href="academia.html">学术交流</a></li>
+							<li class="main-nav-li col-md-2 text-center"><a href="about.html">关于我们</a></li>
+						</ul>
+					</div>      <!-- end navbar-collapse -->		
+				</div> 		<!-- end col-md-offset-2 col-md-10 -->
+			</div>   	<!-- end row -->
+		</div>   <!-- end container	 -->	
+	</nav>
+
+	<!-- 弹出登录模态框modal -->
+	<div class="modal fade" id="loginModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">登 录</h3>					 
+				</div>
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">登录</button>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 弹出注册模态框modal -->
+	<div class="modal fade" id="registerModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<h3 class="modal-title text-center">注 册</h3>					 
+				</div>
+
+				<div class="modal-body">
+					<form action="##" role="form">
+						<div class="form-group">
+							<label for="InputUserName">用户名：</label>
+							<input type="text" class="form-control" id="InputUserName" placeholder="学号/邮箱/手机号">
+						</div>
+						<div class="form-group">
+							<label for="InputUserName">邮  箱：</label>
+							<input type="email" class="form-control" id="InputUserName" placeholder="example@xxx.com">
+						</div>
+						<div class="form-group">
+							<label for="InputUserPwd">密  码：</label>
+							<input type="password" class="form-control" id="InputUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group">
+							<label for="InputConUserPwd">确认密码：</label>
+							<input type="password" class="form-control" id="InputConUserPwd" placeholder="请输入密码!">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-success">注  册</button>
+						</div>						
+					</form>
+				</div>    <!-- end modal-body   -->
+			</div>    <!-- end modal-content -->
+		</div>    <!-- end modal-diglog -->
+	</div>     <!--  end modal -->
+
+	<div class="main-body">
+		<!-- 团队介绍 -->
+		<div class="container" id="intro">
+			<div class="row">
+				<div class="col-md-12">
+					<hgroup>
+						<h3>对外投资课程(PBL)介绍</h3>
+						<h6 class="text-muted">PBL introduce</h6>
+					</hgroup>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+					<hr>
+				</div>
+				<div class="col-md-4">
+					<img src="img/intro.jpg" alt="" class="img-circle">
+				</div>
+			</div>
+		</div>
+		<!-- 核心导师和成员个人信息 -->
+		<div class="container" id="member">
+			<div class="row">
+				<div class="col-md-12">
+					<hgroup>
+						<h3>核心导师与成员个人信息</h3>
+						<h6 class="text-muted">Core mentor and member personal information</h6>
+					</hgroup>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<a href="#" class="thumbnail">
+						<img src="img/Allen Iverson.jpg" alt="">
+					</a>
+					<div class="caption text-center">Allen Iverson</div>
+				</div>
+				<div class="col-md-2">
+					<a href="#" class="thumbnail">
+						<img src="img/Derrick Rose.jpg" alt="">
+					</a>
+					<div class="caption text-center">Derrick Rose</div>
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="thumbnail leader">
+						<img src="img/Kobe Bryant.jpg" alt="">
+					</a>
+					<div class="caption text-center">Kobe Bryant</div>
+				</div>
+				<div class="col-md-2">
+					<a href="#" class="thumbnail">
+						<img src="img/Dwyane Wade.jpg" alt="">
+					</a>
+					<div class="caption text-center">Dwyane Wade</div>
+				</div>
+				<div class="col-md-2">
+					<a href="#" class="thumbnail">
+						<img src="img/Tracy McGrady.jpg" alt="">
+					</a>
+					<div class="caption text-center">Tracy McGrady</div>
+				</div>			
+			</div>
+		</div>
+		<!-- 团队照片 -->
+		<div class="container" id="team">	
+			<div class="row">
+				<div class="col-md-12">
+					<hgroup>
+						<h3>团队照片</h3>
+						<h6 class="text-muted">Team photo</h6>
+					</hgroup>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<img src="img/team.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 合作联系 -->
+		<div class="container" id="contact">
+			<div class="row">
+				<div class="col-md-12">
+					<hgroup>
+						<h3>合作联系</h3>
+						<h6 class="text-muted">Cooperation and contact</h6>
+					</hgroup>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4">
+					<p>联系方式：13800138000</p>
+				</div>
+				<div class="col-md-offset-1 col-md-4">
+					<p>联系方式：13800138000</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4">
+					<p>联系方式：13800138000</p>
+				</div>
+				<div class="col-md-offset-1 col-md-4">
+					<p>联系方式：13800138000</p>
+				</div>
+			</div>
+		</div>
+		<!-- 我们项目特长 -->
+		<div class="container" id="expertise">
+			<div class="row">
+				<div class="col-md-12">
+					<hgroup>
+						<h3>我们项目特长</h3>
+						<h6 class="text-muted">Our project expertise</h6>
+					</hgroup>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<p>特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长特长</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<footer id="footer">
+		<p>CopyRight © 2016  广东工业大学 经济与贸易学院</p>
+		<p>地址：中国 广东省 广州市 天河区 迎龙路 161号  邮编：510520</p>
+	</footer>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body></html>

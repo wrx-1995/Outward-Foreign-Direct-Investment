@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>对外直接投资研究网</title>
+	<link rel="shortcut icon" href="img/Ninja.ico">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/basic.css">
 	<style>
@@ -23,6 +24,20 @@
 		.article-list .col-md-3 span{color: #ccc;}
 		.article-list .col-md-3 span:hover{color: #333;}
 		.splitPageBar{margin-top: 25px;}
+		.splitPageBar-sm{display: none;}
+		@media screen and (max-width: 990px){
+			.main-body h3,.left-nav,.article-list .col-md-3{
+				display: none;
+			}
+		}
+		@media screen and (max-width: 768px){
+			.splitPageBar{
+				display: none;
+			}
+			.splitPageBar-sm{
+				display: block;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -246,6 +261,19 @@
 							</ul> 
 	 					</div>
 	 				</div>
+	 				<div class="row splitPageBar-sm">
+	 					<div class="col-md-offset-1 col-md-10">
+	 						<ul class="pagination">
+							  <li><a href="#">上一页</a></li>
+							  <li  class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a href="#">下一页</a></li>
+							</ul> 
+	 					</div>
+	 				</div>
 	 			</div>
 	 		</div>	 <!-- end row -->	
 	 	</div>	<!-- end container -->
@@ -253,7 +281,7 @@
 
 	<footer id="footer">
 		<p>CopyRight © 2016  广东工业大学 经济与贸易学院</p>
-		<p>地址：中国 广东省 广州市 天河区 迎龙路 161号  邮编：510520</p>
+		<p>地址：广东省广州市天河区迎龙路161号  邮编：510520</p>
 	</footer>
 
 	<script src="js/jquery-1.11.1.min.js"></script>

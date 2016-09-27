@@ -68,10 +68,14 @@ body{
 }
 
 /*媒体查询*/
-@media screen and (max-width: 769px){
+@media screen and (max-width: 768px){
 	#pageTitle .pageTitle-form{
 		display: none;
 	}
 }
-
+@media screen and (min-width: 990px){
+	.main-nav>li{
+		width: 145px;
+	} 
+}
 
